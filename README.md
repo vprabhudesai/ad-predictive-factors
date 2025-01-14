@@ -36,7 +36,7 @@ In this project, we will develop a machine learning classification model to pred
 
 **Model Training & Evaluation:**
 - We split the data into training and testing sets (80/20 split).
-- The model achieved an accuracy of [X]% on the test set, with a classification accuracy of at least 75% as per project requirements.
+- The model achieved an accuracy of 92.3% on the test set, exceeding the 75% indicated in the project requirements.
 
 **Evaluation Metrics:**
 - Accuracy: [X]%
@@ -72,9 +72,9 @@ In this project, we will develop a machine learning classification model to pred
 This project provided valuable insights into the potential of machine learning to predict Alzheimer's disease risk. The model successfully met the accuracy requirements, and we were able to identify key predictive factors contributing to the disease.
 
 ## Acknowledgments
-- [Name] for assistance with data cleaning.
-- [Name] for help with model optimization.
-- [Name] for visualizations and final presentation design.
+- Vishesh Prabhudesai and Jill Balderson for assistance with data cleaning.
+- Vishesh Prabhudesai and Jill Balderson for help with model optimization.
+- Vishesh Prabhudesai and Jill Balderson for visualizations and final presentation design.
 
 ## Requirements
 To run the project locally, ensure the following dependencies are installed:
