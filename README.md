@@ -10,7 +10,7 @@ In this project, we will develop a machine learning classification model to pred
 - Leverage various Python tools, including Pandas, Scikit-learn, and Matplotlib, to analyze and visualize the data.
 
 **Key Features:**
-- Data exploration and preprocessing (cleaning, transformation).
+- Data exploration and preprocessing (cleaning, transformation) (REMOVED DOCTORINCHARGE COLUMN)
 - Model selection and evaluation using metrics like (XXX...accuracy and R-squared.)
 - Visualization of key factors influencing Alzheimer's prediction.
 
