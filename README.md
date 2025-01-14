@@ -2,7 +2,7 @@
 
 ## Project Overview
 **Description:**  
-In this project, we will develop a machine learning classification model to predict Alzheimer's disease progression in patients based on various factors. Using patient data from "XXXXX" (insert datasource), we aim to identify the predictive factors that are most strongly associated with the likelihood of Alzheimer's disease. Our model will be built using Scikit-learn, and we will evaluate its performance using a variety of metrics.
+In this project, we will develop a machine learning classification model to predict Alzheimer's disease progression in patients based on various factors. Using an Alzheimer's Disease patient dataset from Kaggle (Full Citation below in ReadMe file), we aim to identify the predictive factors that are most strongly associated with the likelihood of Alzheimer's disease. Our model will be built using Scikit-learn, and we will evaluate its performance using a variety of metrics.
 
 **Objective:**  
 - Build a machine learning model that can predict the likelihood of Alzheimer's disease in patients.
@@ -10,8 +10,8 @@ In this project, we will develop a machine learning classification model to pred
 - Leverage various Python tools, including Pandas, Scikit-learn, and Matplotlib, to analyze and visualize the data.
 
 **Key Features:**
-- Data exploration and preprocessing (cleaning, transformation) (REMOVED DOCTORINCHARGE COLUMN)
-- Model selection and evaluation using metrics like (XXX...accuracy and R-squared.)
+- Data exploration and preprocessing (cleaning, transformation, scaling)
+- Model selection and evaluation using metrics like accuracy and R-squared.
 - Visualization of key factors influencing Alzheimer's prediction.
 
 ## Data Collection and Preparation
@@ -20,7 +20,7 @@ In this project, we will develop a machine learning classification model to pred
 - The dataset has over 500 records, which are used for training and testing the model.
 
 **Data Cleaning & Transformation:**  
-- The data was cleaned to handle missing values, outliers, and duplicates.
+- The dataset did not actually require any processing for missing values, outliers, and duplicates. We did remove two irrelevant columns, including DoctorInCharge and PatientID.
 - We performed feature engineering to extract important features relevant to Alzheimer's disease prediction.
 - Data was split into training and testing sets for model evaluation.
 
@@ -31,7 +31,7 @@ In this project, we will develop a machine learning classification model to pred
 
 ## Model Implementation
 **Model Selection:**  
-- We selected a classification model (e.g., Random Forest, Decision Tree) to predict the likelihood of Alzheimer's disease.
+- We selected a classification model (Random Forest, Decision Tree) to predict the likelihood of Alzheimer's disease.
 - The model was trained using the processed dataset and evaluated using various metrics.
 
 **Model Training & Evaluation:**
@@ -83,3 +83,14 @@ To run the project locally, ensure the following dependencies are installed:
 - Matplotlib
 - Scikit-learn
 - Jupyter Notebooks (for exploration)
+
+## Dataset Citation
+@misc{rabie_el_kharoua_2024,
+title={Alzheimer's Disease Dataset},
+url={https://www.kaggle.com/dsv/8668279},
+DOI={10.34740/KAGGLE/DSV/8668279},
+publisher={Kaggle},
+author={Rabie El Kharoua},
+year={2024}
+}
+
