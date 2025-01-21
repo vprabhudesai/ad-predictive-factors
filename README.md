@@ -1,62 +1,71 @@
-# Project Title: Alzheimer's Disease Prediction Model  (DRAFT.. EDIT WITH MORE ACCURATE/UP TO DATE INFO AS WE MOVE THROUGH PROJECT)
+# Project Title: Alzheimer's Disease Prediction Model  
 
 ## Project Overview
 **Description:**  
-In this project, we will develop a machine learning classification model to predict Alzheimer's disease progression in patients based on various factors. Using an Alzheimer's Disease patient dataset from Kaggle (Full Citation below in ReadMe file), we aim to identify the predictive factors that are most strongly associated with the likelihood of Alzheimer's disease. Our model will be built using Scikit-learn, and we will evaluate its performance using a variety of metrics.
+This machine learning project focuses on developing a predictive model for Alzheimer's disease using patient data from the [Alzheimers Disease Patient Dataset](https://www.kaggle.com/dsv/8668279) on Kaggle. The model utilizes various health metrics, behavioral indicators, and medical measurements to predict the likelihood of Alzheimer's disease.
 
-**Objective:**  
-- Build a machine learning model that can predict the likelihood of Alzheimer's disease in patients.
-- Evaluate and optimize the model's performance to ensure it achieves at least 75% classification accuracy.
-- Leverage various Python tools, including Pandas, Scikit-learn, and Matplotlib, to analyze and visualize the data.
+**Dataset Description**
+The dataset contains 2,149 patient records with 35 features including:
+ - Demographic information (age, gender, ethnicity, education level)
+ - Health metrics (BMI, blood pressure, cholesterol levels)
+ - Behavioral indicators (memory complaints, confusion, behavioral problems)
+ - Lifestyle factors (smoking, alcohol consumption, physical activity)
+ - Medical assessments (MMSE scores, functional assessments)
 
-**Key Features:**
-- Data exploration and preprocessing (cleaning, transformation, scaling)
-- Model selection and evaluation using metrics like accuracy and R-squared.
-- Visualization of key factors influencing Alzheimer's prediction.
+**Technologies Used**
+ - Python 3.x
+ - scikit-learn
+ - pandas
+ - matplotlib
+ - numpy
 
-## Data Collection and Preparation
-**Dataset Overview:**  
-- The dataset used contains information on patients with Alzheimer’s disease, including demographic data, clinical measurements, and medical history.
-- The dataset has over 500 records, which are used for training and testing the model.
+**Model Architecture**
+ - Algorithm: Random Forest Classifier
+ - Features: 32 input features (excluding PatientID, DoctorInCharge, and target variable)
+ - Target Variable: Binary classification (0: No Alzheimer's, 1: Alzheimer's)
 
-**Data Cleaning & Transformation:**  
-- The dataset did not actually require any processing for missing values, outliers, and duplicates. We did remove two irrelevant columns, including DoctorInCharge and PatientID.
-- We performed feature engineering to extract important features relevant to Alzheimer's disease prediction.
-- Data was split into training and testing sets for model evaluation.
+**Inital Model Performance Metrics**
+ - Accuracy: 92.6%
+ - Precision: 93%
+ - Recall: 86%
+ - F1-Score: 89%
 
-**Tools Used:**
-- **Pandas:** For data manipulation and cleaning.
-- **Matplotlib & Pandas Plotting:** For data visualization.
-- **Scikit-learn:** For machine learning model implementation and evaluation.
+**Key Findings**
 
-## Model Implementation
-**Model Selection:**  
-- We selected a classification model (Random Forest, Decision Tree) to predict the likelihood of Alzheimer's disease.
-- The model was trained using the processed dataset and evaluated using various metrics.
+***Most Important Predictors:***
+ - Functional Assessment (18.2%)
+ - Activities of Daily Living (16.1%)
+ - MMSE Score (13.2%)
+ - Memory Complaints (7.6%)
+ - Behavioral Problems (5%)
 
-**Model Training & Evaluation:**
-- We split the data into training and testing sets (80/20 split).
-- The model achieved an accuracy of 92.3% on the test set, exceeding the 75% indicated in the project requirements.
+***Dataset Characteristics***
+ - Imbalanced classes (760 positive cases, 1389 negative cases)
+ - Strong correlation between functional assessment scores and diagnosis
+ - Significant impact of cognitive measures on prediction accuracy
 
-**Evaluation Metrics:**
-- Accuracy: [X]%
-- Precision, Recall, F1-Score: [X]%
-- ROC Curve: ![Insert Graph]
+**Future Improvements**
+
+***Feature Engineering:***
+ - Develop composite scores from related features
+ - Investigate interaction effects between variables
+
+***Model Optimization:***
+ - Implement class balancing techniques
+ - Explore other algorithms (XGBoost, LightGBM)
+ - Fine-tune hyperparameters further
+
+***Additional Analysis:***
+
+ - Age-group specific performance analysis
+ - Risk factor interaction study
+ - Feature importance stability analysis
+
 
 **Model Optimization:**  
 - We iteratively improved the model by adjusting hyperparameters.
 - A summary of model optimizations and their impacts is available in [document/table].
   
-**Tools Used:**
-- **Scikit-learn:** For training and evaluating the model.
-- **Matplotlib/Seaborn:** For visualizing model performance.
-
-## GitHub Repository Structure
-
-/project-root ├── /data └── cleaned_data.csv ├── /notebooks └── data_exploration.ipynb ├── /scripts └── train_model.py ├── README.md └── requirements.txt
-
-**.gitignore:**  
-- Contains the list of files to exclude from version control, such as data files, temporary files, etc.
 
 ## Future Work & Research
 - **Next Steps:**  
@@ -71,18 +80,12 @@ In this project, we will develop a machine learning classification model to pred
 ## Conclusion
 This project provided valuable insights into the potential of machine learning to predict Alzheimer's disease risk. The model successfully met the accuracy requirements, and we were able to identify key predictive factors contributing to the disease.
 
-## Acknowledgments
+## Contributors
 - Vishesh Prabhudesai and Jill Balderson for assistance with data cleaning.
 - Vishesh Prabhudesai and Jill Balderson for help with model optimization.
 - Vishesh Prabhudesai and Jill Balderson for visualizations and final presentation design.
 
-## Requirements
-To run the project locally, ensure the following dependencies are installed:
-- Python 3.x
-- Pandas
-- Matplotlib
-- Scikit-learn
-- Jupyter Notebooks (for exploration)
+
 
 ## Dataset Citation
 @misc{rabie_el_kharoua_2024,
