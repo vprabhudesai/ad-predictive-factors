@@ -26,7 +26,7 @@ The dataset contains 2,149 patient records with 35 features including:
  - Features: 32 input features (excluding PatientID, DoctorInCharge, and target variable)
  - Target Variable: Binary classification (0: No Alzheimer's, 1: Alzheimer's)
 
-The reasoning for choosing this classification algorithm was based on a primary question. What are the factors/symptoms that play the biggest part in diagnosing Alzheimer's disease? With Random Forst Classifier, a particularly useful function is feature importance, which details the weight of each dependant variable in the model.
+The reasoning for choosing this classification algorithm was based on a primary question. What are the factors/symptoms that play the biggest part in diagnosing Alzheimer's disease? With Random Forest Classifier, a particularly useful function is feature importance, which details the weight of each dependant variable in the model.
 
 **Inital Model Performance Metrics**
  - Accuracy: 92.6%
