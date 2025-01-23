@@ -1,5 +1,7 @@
 # Project Title: Alzheimer's Disease Prediction Model  
 
+[Project Presentation](https://docs.google.com/presentation/d/1E_RyyhHtRQtL6DnMjNCkg4lYWq4NpCGkFSonsx93nWA/edit?usp=sharing)
+
 ## Project Overview
 **Description:**  
 This machine learning project focuses on developing a predictive model for Alzheimer's disease using patient data from the [Alzheimers Disease Patient Dataset](https://www.kaggle.com/dsv/8668279) on Kaggle. The model utilizes various health metrics, behavioral indicators, and medical measurements to predict the likelihood of Alzheimer's disease.
