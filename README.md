@@ -20,9 +20,11 @@ The dataset contains 2,149 patient records with 35 features including:
  - numpy
 
 **Model Architecture**
- - Algorithm: Random Forest Classifier
+ - Algorithm: Random Forest Classifier and RandomForestCV for model optimization
  - Features: 32 input features (excluding PatientID, DoctorInCharge, and target variable)
  - Target Variable: Binary classification (0: No Alzheimer's, 1: Alzheimer's)
+
+The reasoning for choosing this classification algorithm was based on a primary question. What are the factors/symptoms that play the biggest part in diagnosing Alzheimer's disease? With Random Forst Classifier, a particularly useful function is feature importance, which details the weight of each dependant variable in the model.
 
 **Inital Model Performance Metrics**
  - Accuracy: 92.6%
@@ -33,6 +35,7 @@ The dataset contains 2,149 patient records with 35 features including:
 **Key Findings**
 
 ***Most Important Predictors:***
+Feature Importances - Top 5
  - Functional Assessment (18.2%)
  - Activities of Daily Living (16.1%)
  - MMSE Score (13.2%)
@@ -51,21 +54,21 @@ The dataset contains 2,149 patient records with 35 features including:
  - Investigate interaction effects between variables
 
 ***Model Optimization:***
- - Implement class balancing techniques
- - Explore other algorithms (XGBoost, LightGBM)
- - Fine-tune hyperparameters further
+ - Implement cross-validation and hyper-parameter testing techniques
+   Using RandomSearchCV, we tested different levels of parameters, using the n_estimators and max_depth
+ - Using the same techniques while removing features based on initial importance
+   With the features sorted by importance, we used RandomSeachCV on the dataset while removing each feature starting from least importance. When the model accuracy and score started to decline, we took out those features (columns) and ran a final Random Forest Classification Test.
 
+**Optimized Model Performance Metrics**
+ - Accuracy: 92.6%
+ - Precision: 93%
+ - Recall: 86%
+ - F1-Score: 89%
+ - 
 ***Additional Analysis:***
-
  - Age-group specific performance analysis
  - Risk factor interaction study
  - Feature importance stability analysis
-
-
-**Model Optimization:**  
-- We iteratively improved the model by adjusting hyperparameters.
-- A summary of model optimizations and their impacts is available in [document/table].
-  
 
 ## Future Work & Research
 - **Next Steps:**  
@@ -81,9 +84,9 @@ The dataset contains 2,149 patient records with 35 features including:
 This project provided valuable insights into the potential of machine learning to predict Alzheimer's disease risk. The model successfully met the accuracy requirements, and we were able to identify key predictive factors contributing to the disease.
 
 ## Contributors
-- Vishesh Prabhudesai and Jill Balderson for assistance with data cleaning.
-- Vishesh Prabhudesai and Jill Balderson for help with model optimization.
-- Vishesh Prabhudesai and Jill Balderson for visualizations and final presentation design.
+- Vassudeo Prabhudesai and Jill Balderson for data cleaning.
+- Vassudeo Prabhudesai and Jill Balderson for model optimization.
+- Vassudeo Prabhudesai and Jill Balderson for visualizations and final presentation design.
 
 
 
