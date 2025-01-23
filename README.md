@@ -31,8 +31,8 @@ The reasoning for choosing this classification algorithm was based on a primary 
 **Inital Model Performance Metrics**
  - Accuracy: 92.6%
  - Precision: 93%
- - Recall: 86%
- - F1-Score: 89%
+ - Recall: 97%
+ - F1-Score: 95%
 
 **Key Findings**
 
@@ -64,9 +64,9 @@ Feature Importances - Top 5
 **Optimized Model Performance Metrics**
  - Accuracy: 92.6%
  - Precision: 93%
- - Recall: 86%
- - F1-Score: 89%
- - 
+ - Recall: 98%
+ - F1-Score: 95%
+   
 ***Additional Analysis:***
  - Age-group specific performance analysis
  - Risk factor interaction study
